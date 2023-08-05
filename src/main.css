@@ -1,0 +1,144 @@
+
+.box{
+    display: flex;
+    justify-content: space-between;
+  background-color: black;
+   height: 13vh;
+ box-shadow: 0 0 10px red;
+}
+.box1{
+ margin-left: 15px;
+margin-top: 10px;
+}
+.box2{
+    margin-right: 15px;
+   color: white;
+   margin-top: 10px;
+}
+.box3{
+   width: 600px;
+   align-items: center;
+   text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 13px;
+}
+
+
+
+  span{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s alternate infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+/* Middle section */
+
+
+.middle{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    width: 100vw;
+    margin-top: 10px;
+}
+.middle1{
+    height: 220px;
+    width: 220px;
+    box-shadow: 0 0 20px rgb(20, 250, 20);
+    z-index: 1;
+}
+.middle1:hover{
+    box-shadow: 0 0 10px black;
+}
+.middle2:hover{
+    box-shadow: 0 0 10px black;
+}
+.middle2{
+    height: 220px;
+    width: 220px;
+    box-shadow: 0 0 20px  rgb(20, 250, 20);
+    z-index: 2;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-around; 
+}
+.button1,.button2{
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    font-weight: 700;
+    transition: 0.7s ease;
+}
+.button1:hover{
+    background-color: aqua;
+    border: 2px solid red;
+}
+.button2:hover{
+    background-color: aqua;
+    border: 2px solid red;
+}
+
+.main{
+    height: 300px;
+    width: 600px;
+   margin: auto;
+   margin-top: 20px;
+   align-items: center;
+  box-shadow: 0 0 15px black;
+}
+.mainn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.main1{
+margin-left: 10px;
+margin-top: 30px;
+}
+
+
+.footer{
+    margin-top: 20px;
+    height: 13vh;
+    width: 100vw;
+    background-color: yellow;
+   
+}
+
+@media (max-width: 645px){
+    .box{
+        display: flex;
+        justify-content: space-between;
+      background-color: black;
+       height: 12vh;
+     box-shadow: 0 0 10px red;
+     width: 100%;
+    }
+    .box3{
+        width: 400px;
+        align-items: center;
+        text-align: center;
+         color: red;
+         font-weight: 500;
+         font-size: 20px;
+         margin-top: 13px;
+     }
+}
